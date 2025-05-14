@@ -1,0 +1,115 @@
+@import url(bretzel-reset.css);
+
+@font-face {
+  font-family: Inter;
+  src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root {
+  --color__grey900: #141414;
+  --color__grey800: #1f1f1f;
+  --color__grey700: #333333;
+  --color__white: #ffffff;
+  --color__green: #c4f82a;
+  --spacing__50: 0.25rem;
+  --spacing__200: 1rem;
+  --spacing__100: 0.5rem;
+  --spacing__150: 0.75rem;
+  --spacing__300: 1.5rem;
+  --spacing__500: 2.5rem;
+  --fontsize__textpreset1: 1.5rem;
+  --fontsize__textpreset2: 0.875rem;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 var(--spacing__300);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: var(--color__grey900);
+  color: var(--color__white);
+}
+
+main {
+  max-width: 384px;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  row-gap: var(--spacing__300);
+  border-radius: var(--spacing__150);
+  padding: var(--spacing__300);
+  background: var(--color__grey800);
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  row-gap: var(--spacing__300);
+}
+
+img {
+  max-width: 88px;
+  height: auto;
+  border-radius: 50%;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fontsize__textpreset1);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: var(--fontsize__textpreset2);
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--color__green);
+}
+
+p {
+  font-size: var(--fontsize__textpreset2);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+ul {
+  display: flex;
+  flex-flow: column;
+  row-gap: var(--spacing__200);
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  list-style: none;
+}
+
+a {
+  display: block;
+  flex: 1;
+  padding: var(--spacing__150);
+  text-decoration: none;
+  font-size: var(--fontsize__textpreset2);
+  font-weight: 700;
+  background: var(--color__grey700);
+  color: inherit;
+  border-radius: var(--spacing__100);
+  transition: color 300ms ease-in , background-color 3000ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+a:hover {
+    background: var(--color__green);
+    color: var(--color__grey900);
+}
