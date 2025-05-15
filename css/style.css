@@ -107,8 +107,8 @@ a {
   background: var(--color__grey700);
   color: inherit;
   border-radius: var(--spacing__100);
-  transition: color 600ms cubic-bezier(0, 1.16, 0.33, 1),
-    background-color 3000ms cubic-bezier(0, 1.16, 0.33, 1);
+  transition: color 150ms ease-in-out,
+    background-color 600ms ease-in-out;
 }
 
 a:hover {
